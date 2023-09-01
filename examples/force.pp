@@ -9,16 +9,16 @@ $ensure = '<version>'
 $ensure = installed
 
 #if overwrite existing cfg files
-$config_files = '-o Dpkg::Options::="--force-confnew"'
+$config_files = '-o'
 #elsif force use of old files
-$config_files = '-o Dpkg::Options::="--force-confold"'
+$config_files = '-o'
 #elsif update only unchanged files
-$config_files = '-o Dpkg::Options::="--force-confdef"'
+$config_files = '-o'
 #else
 $config_files = ''
 
 #if install missing configuration files for the package
-$config_missing = '-o Dpkg::Options::="--force-confmiss"'
+$config_missing = '-o'
 #else
 $config_missing = ''
 
